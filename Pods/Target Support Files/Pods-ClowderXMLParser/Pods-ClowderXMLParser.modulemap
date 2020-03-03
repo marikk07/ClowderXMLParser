@@ -1,0 +1,6 @@
+framework module Pods_ClowderXMLParser {
+  umbrella header "Pods-ClowderXMLParser-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,511 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5E6F012D240E7DFD00F90492 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E6F012C240E7DFD00F90492 /* AppDelegate.swift */; };
+		5E6F012F240E7DFD00F90492 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E6F012E240E7DFD00F90492 /* SceneDelegate.swift */; };
+		5E6F0136240E7E0100F90492 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5E6F0135240E7E0100F90492 /* Assets.xcassets */; };
+		5E6F0154240E7F0C00F90492 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5E6F0150240E7F0C00F90492 /* Main.storyboard */; };
+		5E6F0155240E7F0C00F90492 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5E6F0152240E7F0C00F90492 /* LaunchScreen.storyboard */; };
+		5E6F0157240E7F7A00F90492 /* RSSListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E6F0156240E7F7A00F90492 /* RSSListController.swift */; };
+		5E6F015A240E807B00F90492 /* SwinjectStoryboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E6F0159240E807B00F90492 /* SwinjectStoryboard.swift */; };
+		5E6F015C240E80BD00F90492 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E6F015B240E80BD00F90492 /* Constants.swift */; };
+		5E6F015F240E815D00F90492 /* RSSNetworkRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E6F015E240E815D00F90492 /* RSSNetworkRouter.swift */; };
+		5E6F0162240E81D700F90492 /* RSSProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E6F0161240E81D700F90492 /* RSSProvider.swift */; };
+		5E6F0165240E880D00F90492 /* RSSItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E6F0164240E880D00F90492 /* RSSItem.swift */; };
+		5E6F0167240EBD4C00F90492 /* RSSListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E6F0166240EBD4C00F90492 /* RSSListCell.swift */; };
+		5E6F016B240EC30D00F90492 /* RSSWebController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E6F016A240EC30D00F90492 /* RSSWebController.swift */; };
+		635DBF9572A7821677010E76 /* Pods_ClowderXMLParser.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E01D768572AF9F34AC027B9 /* Pods_ClowderXMLParser.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		4E01D768572AF9F34AC027B9 /* Pods_ClowderXMLParser.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ClowderXMLParser.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5E6F0129240E7DFD00F90492 /* ClowderXMLParser.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ClowderXMLParser.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5E6F012C240E7DFD00F90492 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		5E6F012E240E7DFD00F90492 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		5E6F0135240E7E0100F90492 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5E6F013A240E7E0100F90492 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5E6F0151240E7F0C00F90492 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		5E6F0153240E7F0C00F90492 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		5E6F0156240E7F7A00F90492 /* RSSListController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RSSListController.swift; sourceTree = "<group>"; };
+		5E6F0159240E807B00F90492 /* SwinjectStoryboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwinjectStoryboard.swift; sourceTree = "<group>"; };
+		5E6F015B240E80BD00F90492 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		5E6F015E240E815D00F90492 /* RSSNetworkRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RSSNetworkRouter.swift; sourceTree = "<group>"; };
+		5E6F0161240E81D700F90492 /* RSSProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RSSProvider.swift; sourceTree = "<group>"; };
+		5E6F0164240E880D00F90492 /* RSSItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RSSItem.swift; sourceTree = "<group>"; };
+		5E6F0166240EBD4C00F90492 /* RSSListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RSSListCell.swift; sourceTree = "<group>"; };
+		5E6F016A240EC30D00F90492 /* RSSWebController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RSSWebController.swift; sourceTree = "<group>"; };
+		7AB886CC441D387E52BB1841 /* Pods-ClowderXMLParser.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ClowderXMLParser.release.xcconfig"; path = "Target Support Files/Pods-ClowderXMLParser/Pods-ClowderXMLParser.release.xcconfig"; sourceTree = "<group>"; };
+		E9E7395B3D1AF99AADC9B860 /* Pods-ClowderXMLParser.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ClowderXMLParser.debug.xcconfig"; path = "Target Support Files/Pods-ClowderXMLParser/Pods-ClowderXMLParser.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5E6F0126240E7DFD00F90492 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				635DBF9572A7821677010E76 /* Pods_ClowderXMLParser.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		068D612E450FEDE9A47EA461 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4E01D768572AF9F34AC027B9 /* Pods_ClowderXMLParser.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5E6F0120240E7DFD00F90492 = {
+			isa = PBXGroup;
+			children = (
+				5E6F012B240E7DFD00F90492 /* ClowderXMLParser */,
+				5E6F012A240E7DFD00F90492 /* Products */,
+				FAFA9D655D981E5BEEA029BE /* Pods */,
+				068D612E450FEDE9A47EA461 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		5E6F012A240E7DFD00F90492 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5E6F0129240E7DFD00F90492 /* ClowderXMLParser.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5E6F012B240E7DFD00F90492 /* ClowderXMLParser */ = {
+			isa = PBXGroup;
+			children = (
+				5E6F012C240E7DFD00F90492 /* AppDelegate.swift */,
+				5E6F012E240E7DFD00F90492 /* SceneDelegate.swift */,
+				5E6F0163240E87F300F90492 /* Models */,
+				5E6F0140240E7E6500F90492 /* UI */,
+				5E6F0158240E804A00F90492 /* Helpers */,
+				5E6F0141240E7E7A00F90492 /* Resources */,
+				5E6F0135240E7E0100F90492 /* Assets.xcassets */,
+				5E6F013A240E7E0100F90492 /* Info.plist */,
+			);
+			path = ClowderXMLParser;
+			sourceTree = "<group>";
+		};
+		5E6F0140240E7E6500F90492 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				5E6F0169240EC2DF00F90492 /* RSSWebController */,
+				5E6F0168240EC2BB00F90492 /* RSSListController */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		5E6F0141240E7E7A00F90492 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				5E6F0149240E7E9D00F90492 /* Storyboards */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		5E6F0149240E7E9D00F90492 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				5E6F0152240E7F0C00F90492 /* LaunchScreen.storyboard */,
+				5E6F0150240E7F0C00F90492 /* Main.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		5E6F0158240E804A00F90492 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				5E6F0160240E81B100F90492 /* Providers */,
+				5E6F015D240E814500F90492 /* Routers */,
+				5E6F0159240E807B00F90492 /* SwinjectStoryboard.swift */,
+				5E6F015B240E80BD00F90492 /* Constants.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		5E6F015D240E814500F90492 /* Routers */ = {
+			isa = PBXGroup;
+			children = (
+				5E6F015E240E815D00F90492 /* RSSNetworkRouter.swift */,
+			);
+			path = Routers;
+			sourceTree = "<group>";
+		};
+		5E6F0160240E81B100F90492 /* Providers */ = {
+			isa = PBXGroup;
+			children = (
+				5E6F0161240E81D700F90492 /* RSSProvider.swift */,
+			);
+			path = Providers;
+			sourceTree = "<group>";
+		};
+		5E6F0163240E87F300F90492 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				5E6F0164240E880D00F90492 /* RSSItem.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		5E6F0168240EC2BB00F90492 /* RSSListController */ = {
+			isa = PBXGroup;
+			children = (
+				5E6F0156240E7F7A00F90492 /* RSSListController.swift */,
+				5E6F0166240EBD4C00F90492 /* RSSListCell.swift */,
+			);
+			path = RSSListController;
+			sourceTree = "<group>";
+		};
+		5E6F0169240EC2DF00F90492 /* RSSWebController */ = {
+			isa = PBXGroup;
+			children = (
+				5E6F016A240EC30D00F90492 /* RSSWebController.swift */,
+			);
+			path = RSSWebController;
+			sourceTree = "<group>";
+		};
+		FAFA9D655D981E5BEEA029BE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E9E7395B3D1AF99AADC9B860 /* Pods-ClowderXMLParser.debug.xcconfig */,
+				7AB886CC441D387E52BB1841 /* Pods-ClowderXMLParser.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5E6F0128240E7DFD00F90492 /* ClowderXMLParser */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5E6F013D240E7E0100F90492 /* Build configuration list for PBXNativeTarget "ClowderXMLParser" */;
+			buildPhases = (
+				0F516292CFA8DE1DC01910CB /* [CP] Check Pods Manifest.lock */,
+				5E6F0125240E7DFD00F90492 /* Sources */,
+				5E6F0126240E7DFD00F90492 /* Frameworks */,
+				5E6F0127240E7DFD00F90492 /* Resources */,
+				BE8600D8C25F501899D0B615 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ClowderXMLParser;
+			productName = ClowderXMLParser;
+			productReference = 5E6F0129240E7DFD00F90492 /* ClowderXMLParser.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5E6F0121240E7DFD00F90492 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = Marian;
+				TargetAttributes = {
+					5E6F0128240E7DFD00F90492 = {
+						CreatedOnToolsVersion = 11.3;
+					};
+				};
+			};
+			buildConfigurationList = 5E6F0124240E7DFD00F90492 /* Build configuration list for PBXProject "ClowderXMLParser" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5E6F0120240E7DFD00F90492;
+			productRefGroup = 5E6F012A240E7DFD00F90492 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5E6F0128240E7DFD00F90492 /* ClowderXMLParser */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5E6F0127240E7DFD00F90492 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5E6F0155240E7F0C00F90492 /* LaunchScreen.storyboard in Resources */,
+				5E6F0136240E7E0100F90492 /* Assets.xcassets in Resources */,
+				5E6F0154240E7F0C00F90492 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0F516292CFA8DE1DC01910CB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ClowderXMLParser-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BE8600D8C25F501899D0B615 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ClowderXMLParser/Pods-ClowderXMLParser-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ClowderXMLParser/Pods-ClowderXMLParser-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ClowderXMLParser/Pods-ClowderXMLParser-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5E6F0125240E7DFD00F90492 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5E6F015C240E80BD00F90492 /* Constants.swift in Sources */,
+				5E6F012D240E7DFD00F90492 /* AppDelegate.swift in Sources */,
+				5E6F015F240E815D00F90492 /* RSSNetworkRouter.swift in Sources */,
+				5E6F012F240E7DFD00F90492 /* SceneDelegate.swift in Sources */,
+				5E6F0157240E7F7A00F90492 /* RSSListController.swift in Sources */,
+				5E6F016B240EC30D00F90492 /* RSSWebController.swift in Sources */,
+				5E6F0167240EBD4C00F90492 /* RSSListCell.swift in Sources */,
+				5E6F0162240E81D700F90492 /* RSSProvider.swift in Sources */,
+				5E6F015A240E807B00F90492 /* SwinjectStoryboard.swift in Sources */,
+				5E6F0165240E880D00F90492 /* RSSItem.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		5E6F0150240E7F0C00F90492 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5E6F0151240E7F0C00F90492 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		5E6F0152240E7F0C00F90492 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5E6F0153240E7F0C00F90492 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5E6F013B240E7E0100F90492 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		5E6F013C240E7E0100F90492 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5E6F013E240E7E0100F90492 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E9E7395B3D1AF99AADC9B860 /* Pods-ClowderXMLParser.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ClowderXMLParser/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "-23456.ClowderXMLParser";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5E6F013F240E7E0100F90492 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7AB886CC441D387E52BB1841 /* Pods-ClowderXMLParser.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ClowderXMLParser/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "-23456.ClowderXMLParser";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5E6F0124240E7DFD00F90492 /* Build configuration list for PBXProject "ClowderXMLParser" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5E6F013B240E7E0100F90492 /* Debug */,
+				5E6F013C240E7E0100F90492 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5E6F013D240E7E0100F90492 /* Build configuration list for PBXNativeTarget "ClowderXMLParser" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5E6F013E240E7E0100F90492 /* Debug */,
+				5E6F013F240E7E0100F90492 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5E6F0121240E7DFD00F90492 /* Project object */;
+}
